@@ -1,5 +1,5 @@
-IMAGE_NAME=rcarmo/mqtt-tweet:armhf
-CONTAINER_NAME=mqtt-tweet
+IMAGE_NAME=rcarmo/mqtt-broadlink:arm32v7
+CONTAINER_NAME=mqtt-broadlink
 build: Dockerfile
 	docker build -t ${IMAGE_NAME} .
 
