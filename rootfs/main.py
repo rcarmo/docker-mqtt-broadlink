@@ -21,7 +21,7 @@ def run():
     c = mqtt.Client("mqtt_broadlink")
     c.on_connect = on_connect
     c.on_message = on_message
-    c.connect(os.environ("MQTT_HOST","localhost"), int(os.environ("MQTT_PORT",1883)))
+    c.connect(os.environ.get("MQTT_HOST","localhost"), int(os.environ.get("MQTT_PORT",1883)))
     c.loop_forever()
 
 if __name__ == '__main__':
